@@ -43,25 +43,25 @@ function App() {
                     href="mailto:igorcarvalhaes123@gmail.com"
                     target="_blank"
                     title="Entre em contato por email"
-                    className="link-underline flex items-center gap-2 p-2 rounded-lg transition-all duration-200 text-neutral-300 hover:text-neutral-50"
+                    className="relative link-underline flex items-center gap-2 p-2 rounded-lg transition-all duration-200 text-neutral-300 hover:text-neutral-50 after:content-[''] after:bg-neutral-300 after:h-[3px] after:w-0 after:left-0 after:-bottom-[5px] after:rounded-xl after:absolute after:transition-all after:duration-200 hover:after:w-full"
                   >
                     <Mail size={30} />
                   </a>
                   <a
                     href="https://x.com/igcarvalhaes"
-                    className="link-underline flex items-center gap-2 p-2 rounded-lg transition-all duration-200 text-neutral-300 hover:text-neutral-50"
+                    className="relative link-underline flex items-center gap-2 p-2 rounded-lg transition-all duration-200 text-neutral-300 hover:text-neutral-50 after:content-[''] after:bg-neutral-300 after:h-[3px] after:w-0 after:left-0 after:-bottom-[5px] after:rounded-xl after:absolute after:transition-all after:duration-200 hover:after:w-full"
                   >
                     <Twitter size={30} />
                   </a>
                   <a
                     href="https://github.com/igcarvalhaes/"
-                    className="link-underline flex items-center gap-2 p-2 rounded-lg transition-all duration-200 text-neutral-300 hover:text-neutral-50"
+                    className="relative link-underline flex items-center gap-2 p-2 rounded-lg transition-all duration-200 text-neutral-300 hover:text-neutral-50 after:content-[''] after:bg-neutral-300 after:h-[3px] after:w-0 after:left-0 after:-bottom-[5px] after:rounded-xl after:absolute after:transition-all after:duration-200 hover:after:w-full"
                   >
                     <Github size={30} />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/igor-carvalhaes/"
-                    className="link-underline flex items-center gap-2 p-2 rounded-lg transition-all duration-200 text-neutral-300 hover:text-neutral-50"
+                    className="relative link-underline flex items-center gap-2 p-2 rounded-lg transition-all duration-200 text-neutral-300 hover:text-neutral-50 after:content-[''] after:bg-neutral-300 after:h-[3px] after:w-0 after:left-0 after:-bottom-[5px] after:rounded-xl after:absolute after:transition-all after:duration-200 hover:after:w-full"
                   >
                     <Linkedin size={30} />
                   </a>

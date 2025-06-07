@@ -1,6 +1,50 @@
 import "./App.css";
 import { Navbar } from "./components/Navbar";
-import { Github, Linkedin, Mail, MoveRight, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { ProjetosCard } from "./components/ProjetosCard";
+
+const projetos = [
+  {
+    id: 1,
+    nome: "Ignite Feed",
+    descricao:
+      "Uma aplicação de feed desenvolvida durante o módulo de Fundamentos do Ignite ReactJS da Rocketseat. Neste projeto, eu aprendi e apliquei conceitos essenciais do React, como componentização, props, gerenciamento de estado, imutabilidade e hooks",
+    linkProjetoLive: "https://ignite-feed-ebon-seven.vercel.app/",
+    linkRepo: "https://github.com/igcarvalhaes/ignite-feed",
+  },
+  {
+    id: 2,
+    nome: "Biblioteca",
+    descricao:
+      "Uma aplicação de biblioteca criada como parte do curso The Odin Project. Este projeto foi desenvolvido para gerenciar livros, permitindo adicionar, editar e excluir itens. Aprendi conceitos fundamentais de DOM manipulation e lógica de programação com JavaScript.",
+    linkProjetoLive: "https://igcarvalhaes.github.io/library/",
+    linkRepo: "https://github.com/igcarvalhaes/library",
+  },
+  {
+    id: 3,
+    nome: "Weather App",
+    descricao:
+      "Um site para consulta de previsão do tempo, onde o usuário pode buscar informações meteorológicas de qualquer cidade. Desenvolvido com JavaScript puro, consumindo dados de uma API gratuita da OpenWeatherMap e utilizando Tailwind CSS para o design responsivo.",
+    linkProjetoLive: "https://igcarvalhaes.github.io/weatherwebsite/",
+    linkRepo: "https://github.com/igcarvalhaes/weatherwebsite",
+  },
+  {
+    id: 4,
+    nome: "Pedra, Papel & Tesoura",
+    descricao:
+      "Você e o computador participarão de uma série de rodadas, cada uma escolhendo uma das três opções: Pedra, Papel ou Tesoura. O jogo acompanha a pontuação e declara o vencedor após cinco rodadas.",
+    linkProjetoLive: "https://igcarvalhaes.github.io/rock-paper-scissors/",
+    linkRepo: "https://github.com/igcarvalhaes/rock-paper-scissors",
+  },
+  {
+    id: 5,
+    nome: "Calculadora",
+    descricao:
+      "Uma calculadora funcional que permite realizar operações matemáticas básicas, como adição, subtração, multiplicação e divisão. Desenvolvida como parte do curso The Odin Project, esse projeto foca no uso de JavaScript para manipulação do DOM e lógica de cálculo.",
+    linkProjetoLive: "https://igcarvalhaes.github.io/calculator/",
+    linkRepo: "https://github.com/igcarvalhaes/calculator",
+  },
+];
 
 function App() {
   return (
@@ -72,29 +116,15 @@ function App() {
 
           <section id="projetos" className="flex justify-center py-16">
             <div className="grid gap-6 md:mx-8 mx-4 md:max-w-7xl w-full">
-              <article className="p-6 rounded-lg border-1 border-neutral-700 bg-neutral-800 max-w-2xl  md:max-w-7xl">
-                <div className="flex flex-col md:p-12">
-                  <div className="flex justify-between mb-3 pb-4 ">
-                    <span className="font-bold text-3xl">
-                      <a href="#">Ignite Feed</a>
-                    </span>
-                  </div>
-                  <div className="pt-4 mb-4">
-                    <p className="text-2xl text-left">
-                      Uma aplicação de feed desenvolvida durante o módulo de
-                      Fundamentos do Ignite ReactJS da Rocketseat. Neste
-                      projeto, eu aprendi e apliquei conceitos essenciais do
-                      React, como componentização, props, gerenciamento de
-                      estado, imutabilidade e hooks.
-                    </p>
-                  </div>
-                  <div className="pt-4 mt-4 border-t border-neutral-700">
-                    <a href="#" className="flex gap-2">
-                      Repositório no Github <MoveRight />
-                    </a>
-                  </div>
-                </div>
-              </article>
+              {projetos.map((projeto) => (
+                <ProjetosCard
+                  key={projeto.id}
+                  nome={projeto.nome}
+                  descricao={projeto.descricao}
+                  linkProjetoLive={projeto.linkProjetoLive}
+                  linkRepo={projeto.linkRepo}
+                />
+              ))}
             </div>
           </section>
         </main>

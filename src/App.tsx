@@ -2,6 +2,7 @@ import "./App.css";
 import { Navbar } from "./components/Navbar";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { ProjetosCard } from "./components/ProjetosCard";
+import { Footer } from "./components/Footer";
 
 const projetos = [
   {
@@ -128,6 +129,8 @@ function App() {
             </div>
           </section>
         </main>
+
+        <Footer />
       </div>
     </>
   );

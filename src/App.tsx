@@ -50,7 +50,7 @@ const projetos = [
 function App() {
   return (
     <>
-      <div className="min-h-screen bg-neutral-900 text-neutral-300">
+      <div id="início" className="min-h-screen bg-neutral-900 text-neutral-300">
         <Navbar />
         <main>
           <section

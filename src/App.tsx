@@ -60,7 +60,7 @@ function App() {
             <div className="flex flex-col items-center gap-12 md:gap-32 md:flex-row md:justify-center md:items-center w-full md:max-w-5xl">
               {/* Foto */}
               <div className="order-1 md:order-2 w-full  flex justify-center">
-                <div className="w-64 h-64 md:w-110 md:h-110">
+                <div className="w-64 h-64 md:w-100 md:h-100">
                   <img
                     src="https://github.com/igcarvalhaes.png"
                     alt="Foto de perfil"
@@ -71,10 +71,10 @@ function App() {
 
               {/* Texto */}
               <div className="order-2 gap-5 md:gap-15 md:order-1 w-full flex flex-col items-center md:items-start justify-center text-center md:text-left px-4">
-                <h2 className="text-white text-3xl font-bold md:text-6xl md:text-left">
+                <h2 className="text-white text-3xl font-bold md:text-5xl md:text-left">
                   Igor Carvalhaes
                 </h2>
-                <p className="text-lg md:text-3xl font-light mx-2 md:w-180 md:text-left md:mx-0">
+                <p className="text-lg md:text-2xl font-light mx-2 md:w-180 md:text-left md:mx-0">
                   Sou um desenvolvedor front-end, estudante de Engenharia de
                   Computação na UERJ, apaixonado por criar interfaces bonitas e
                   interativas, focadas em usabilidades, desempenho e
@@ -120,7 +120,7 @@ function App() {
 
           <section id="projetos" className="flex justify-center py-16">
             <div className="grid gap-6 md:mx-8 mx-4 md:max-w-7xl w-full">
-              <h1 className="text-6xl font-bold text-center mb-5">Projetos</h1>
+              <h1 className="text-5xl font-bold text-center mb-5">Projetos</h1>
               {projetos.map((projeto) => (
                 <ProjetosCard
                   key={projeto.id}

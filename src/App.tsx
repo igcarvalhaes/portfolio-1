@@ -95,18 +95,21 @@ function App() {
                   <a
                     href="https://x.com/igcarvalhaes"
                     className="relative link-underline flex items-center gap-2 p-2 rounded-lg transition-all duration-200 text-neutral-300 hover:text-neutral-50 after:content-[''] after:bg-neutral-300 after:h-[3px] after:w-0 after:left-0 after:-bottom-[5px] after:rounded-xl after:absolute after:transition-all after:duration-200 hover:after:w-full"
+                    target="_blank"
                   >
                     <Twitter size={30} />
                   </a>
                   <a
                     href="https://github.com/igcarvalhaes/"
                     className="relative link-underline flex items-center gap-2 p-2 rounded-lg transition-all duration-200 text-neutral-300 hover:text-neutral-50 after:content-[''] after:bg-neutral-300 after:h-[3px] after:w-0 after:left-0 after:-bottom-[5px] after:rounded-xl after:absolute after:transition-all after:duration-200 hover:after:w-full"
+                    target="_blank"
                   >
                     <Github size={30} />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/igor-carvalhaes/"
                     className="relative link-underline flex items-center gap-2 p-2 rounded-lg transition-all duration-200 text-neutral-300 hover:text-neutral-50 after:content-[''] after:bg-neutral-300 after:h-[3px] after:w-0 after:left-0 after:-bottom-[5px] after:rounded-xl after:absolute after:transition-all after:duration-200 hover:after:w-full"
+                    target="_blank"
                   >
                     <Linkedin size={30} />
                   </a>
@@ -117,6 +120,7 @@ function App() {
 
           <section id="projetos" className="flex justify-center py-16">
             <div className="grid gap-6 md:mx-8 mx-4 md:max-w-7xl w-full">
+              <h1 className="text-6xl font-bold text-center mb-5">Projetos</h1>
               {projetos.map((projeto) => (
                 <ProjetosCard
                   key={projeto.id}

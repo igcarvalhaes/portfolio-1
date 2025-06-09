@@ -15,7 +15,7 @@ export function Navbar() {
               key={label}
               href={`#${label.toLowerCase()}`}
               className="
-                relative text-xl font-medium text-neutral-300 transition duration-200
+                relative text-lg font-medium text-neutral-300 transition duration-200
                 after:content-[''] after:bg-neutral-300 after:h-[3px]
                 after:w-0 after:left-0 after:-bottom-[5px]
                 after:rounded-xl after:absolute after:transition-all after:duration-200
@@ -56,7 +56,7 @@ export function Navbar() {
             href={`#${label.toLowerCase()}`}
             onClick={() => setMenuOpen(false)}
             className="
-              relative text-2xl font-medium text-neutral-300 transition duration-200
+              relative text-lg font-medium text-neutral-300 transition duration-200
               after:content-[''] after:bg-neutral-300 after:h-[3px]
               after:w-0 after:left-0 after:-bottom-[5px]
               after:rounded-xl after:absolute after:transition-all after:duration-200

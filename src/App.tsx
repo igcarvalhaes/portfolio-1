@@ -57,10 +57,10 @@ function App() {
             id="sobre"
             className="min-h-screen flex items-center justify-center flex-col"
           >
-            <div className="flex flex-col items-center gap-12 md:gap-32 md:flex-row md:justify-center md:items-center w-full md:max-w-5xl">
+            <div className="flex flex-col items-center gap-12 md:gap-0 md:flex-row md:justify-center md:items-center w-full md:max-w-5xl">
               {/* Foto */}
-              <div className="order-1 md:order-2 w-full  flex justify-center">
-                <div className="w-64 h-64 md:w-100 md:h-100">
+              <div className="order-1 md:order-2 w-full flex justify-center">
+                <div className="w-64 h-64 md:w-[18.75rem] md:h-[18.75rem]">
                   <img
                     src="https://github.com/igcarvalhaes.png"
                     alt="Foto de perfil"
@@ -70,11 +70,11 @@ function App() {
               </div>
 
               {/* Texto */}
-              <div className="order-2 gap-5 md:gap-15 md:order-1 w-full flex flex-col items-center md:items-start justify-center text-center md:text-left px-4">
-                <h2 className="text-white text-3xl font-bold md:text-5xl md:text-left">
+              <div className="order-2 gap-5 md:gap-8 md:order-1 w-full flex flex-col items-center md:items-start justify-center text-center md:text-left px-4">
+                <h2 className="text-white text-3xl font-bold md:text-4xl md:text-left">
                   Igor Carvalhaes
                 </h2>
-                <p className="text-lg md:text-2xl font-light mx-2 md:w-180 md:text-left md:mx-0">
+                <p className="text-lg md:text-xl font-light mx-2 md:w-130 md:text-left md:mx-0">
                   Sou um desenvolvedor front-end, estudante de Engenharia de
                   Computação na UERJ, apaixonado por criar interfaces bonitas e
                   interativas, focadas em usabilidades, desempenho e
@@ -90,28 +90,28 @@ function App() {
                     title="Entre em contato por email"
                     className="relative link-underline flex items-center gap-2 p-2 rounded-lg transition-all duration-200 text-neutral-300 hover:text-neutral-50 after:content-[''] after:bg-neutral-300 after:h-[3px] after:w-0 after:left-0 after:-bottom-[5px] after:rounded-xl after:absolute after:transition-all after:duration-200 hover:after:w-full"
                   >
-                    <Mail size={30} />
+                    <Mail size={30} className="md:w-[23px] md:h-[23px]" />
                   </a>
                   <a
                     href="https://x.com/igcarvalhaes"
                     className="relative link-underline flex items-center gap-2 p-2 rounded-lg transition-all duration-200 text-neutral-300 hover:text-neutral-50 after:content-[''] after:bg-neutral-300 after:h-[3px] after:w-0 after:left-0 after:-bottom-[5px] after:rounded-xl after:absolute after:transition-all after:duration-200 hover:after:w-full"
                     target="_blank"
                   >
-                    <Twitter size={30} />
+                    <Twitter size={30} className="md:w-[23px] md:h-[23px]" />
                   </a>
                   <a
                     href="https://github.com/igcarvalhaes/"
                     className="relative link-underline flex items-center gap-2 p-2 rounded-lg transition-all duration-200 text-neutral-300 hover:text-neutral-50 after:content-[''] after:bg-neutral-300 after:h-[3px] after:w-0 after:left-0 after:-bottom-[5px] after:rounded-xl after:absolute after:transition-all after:duration-200 hover:after:w-full"
                     target="_blank"
                   >
-                    <Github size={30} />
+                    <Github size={30} className="md:w-[23px] md:h-[23px]" />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/igor-carvalhaes/"
                     className="relative link-underline flex items-center gap-2 p-2 rounded-lg transition-all duration-200 text-neutral-300 hover:text-neutral-50 after:content-[''] after:bg-neutral-300 after:h-[3px] after:w-0 after:left-0 after:-bottom-[5px] after:rounded-xl after:absolute after:transition-all after:duration-200 hover:after:w-full"
                     target="_blank"
                   >
-                    <Linkedin size={30} />
+                    <Linkedin size={30} className="md:w-[23px] md:h-[23px]" />
                   </a>
                 </nav>
               </div>
@@ -119,8 +119,10 @@ function App() {
           </section>
 
           <section id="projetos" className="flex justify-center py-16">
-            <div className="grid gap-6 md:mx-8 mx-4 md:max-w-7xl w-full">
-              <h1 className="text-5xl font-bold text-center mb-5">Projetos</h1>
+            <div className="grid gap-6 md:mx-8 mx-4 md:max-w-7xl w-full place-items-center">
+              <h1 className="text-5xl font-bold text-center mb-5 md:text-4xl">
+                Projetos
+              </h1>
               {projetos.map((projeto) => (
                 <ProjetosCard
                   key={projeto.id}

@@ -12,6 +12,8 @@ const projetos = [
       "Uma aplicação de feed desenvolvida durante o módulo de Fundamentos do Ignite ReactJS da Rocketseat. Neste projeto, eu aprendi e apliquei conceitos essenciais do React, como componentização, props, gerenciamento de estado, imutabilidade e hooks",
     linkProjetoLive: "https://ignite-feed-ebon-seven.vercel.app/",
     linkRepo: "https://github.com/igcarvalhaes/ignite-feed",
+    projectImg:
+      "https://raw.githubusercontent.com/igcarvalhaes/ignite-feed/refs/heads/main/public/preview.png",
   },
   {
     id: 2,
@@ -20,6 +22,8 @@ const projetos = [
       "Uma aplicação de biblioteca criada como parte do curso The Odin Project. Este projeto foi desenvolvido para gerenciar livros, permitindo adicionar, editar e excluir itens. Aprendi conceitos fundamentais de DOM manipulation e lógica de programação com JavaScript.",
     linkProjetoLive: "https://igcarvalhaes.github.io/library/",
     linkRepo: "https://github.com/igcarvalhaes/library",
+    projectImg:
+      "https://raw.githubusercontent.com/igcarvalhaes/library/refs/heads/main/images/library02.png",
   },
   {
     id: 3,
@@ -28,6 +32,8 @@ const projetos = [
       "Um site para consulta de previsão do tempo, onde o usuário pode buscar informações meteorológicas de qualquer cidade. Desenvolvido com JavaScript puro, consumindo dados de uma API gratuita da OpenWeatherMap e utilizando Tailwind CSS para o design responsivo.",
     linkProjetoLive: "https://igcarvalhaes.github.io/weatherwebsite/",
     linkRepo: "https://github.com/igcarvalhaes/weatherwebsite",
+    projectImg:
+      "https://raw.githubusercontent.com/igcarvalhaes/weatherwebsite/refs/heads/main/img/01.png",
   },
   {
     id: 4,
@@ -36,6 +42,8 @@ const projetos = [
       "Você e o computador participarão de uma série de rodadas, cada uma escolhendo uma das três opções: Pedra, Papel ou Tesoura. O jogo acompanha a pontuação e declara o vencedor após cinco rodadas.",
     linkProjetoLive: "https://igcarvalhaes.github.io/rock-paper-scissors/",
     linkRepo: "https://github.com/igcarvalhaes/rock-paper-scissors",
+    projectImg:
+      "https://raw.githubusercontent.com/igcarvalhaes/rock-paper-scissors/refs/heads/main/rockpaperscissors.png",
   },
   {
     id: 5,
@@ -44,6 +52,8 @@ const projetos = [
       "Uma calculadora funcional que permite realizar operações matemáticas básicas, como adição, subtração, multiplicação e divisão. Desenvolvida como parte do curso The Odin Project, esse projeto foca no uso de JavaScript para manipulação do DOM e lógica de cálculo.",
     linkProjetoLive: "https://igcarvalhaes.github.io/calculator/",
     linkRepo: "https://github.com/igcarvalhaes/calculator",
+    projectImg:
+      "https://raw.githubusercontent.com/igcarvalhaes/calculator/refs/heads/main/images/calculator.png",
   },
 ];
 

@@ -17,16 +17,6 @@ const projetos = [
   },
   {
     id: 2,
-    nome: "Biblioteca",
-    descricao:
-      "Aplicação para gerenciamento de livros com funcionalidades para adicionar, editar e excluir itens. Desenvolvido com JavaScript e manipulação de DOM.",
-    linkProjetoLive: "https://igcarvalhaes.github.io/library/",
-    linkRepo: "https://github.com/igcarvalhaes/library",
-    projectImg:
-      "https://raw.githubusercontent.com/igcarvalhaes/library/refs/heads/main/images/library02.png",
-  },
-  {
-    id: 3,
     nome: "Weather App",
     descricao:
       "Site de previsão do tempo com busca por cidade, consumindo API da OpenWeatherMap. Desenvolvido com JavaScript puro e estilizado com Tailwind CSS.",
@@ -36,7 +26,27 @@ const projetos = [
       "https://raw.githubusercontent.com/igcarvalhaes/weatherwebsite/refs/heads/main/img/01.png",
   },
   {
+    id: 3,
+    nome: "Biblioteca",
+    descricao:
+      "Aplicação para gerenciamento de livros com funcionalidades para adicionar, editar e excluir itens. Desenvolvido com JavaScript e manipulação de DOM.",
+    linkProjetoLive: "https://igcarvalhaes.github.io/library/",
+    linkRepo: "https://github.com/igcarvalhaes/library",
+    projectImg:
+      "https://raw.githubusercontent.com/igcarvalhaes/library/refs/heads/main/images/library02.png",
+  },
+  {
     id: 4,
+    nome: "Etch-a-Sketch",
+    descricao:
+      "Desenhe livremente em uma grade de pixels, com funcionalidades para limpar a tela e alterar a cor do traço. Desenvolvido com JavaScript puro.",
+    linkProjetoLive: "https://igcarvalhaes.github.io/etch-a-sketch/",
+    linkRepo: "https://github.com/igcarvalhaes/etch-a-sketch",
+    projectImg:
+      "https://raw.githubusercontent.com/igcarvalhaes/etch-a-sketch/refs/heads/main/images/etch-a-sketch.png",
+  },
+  {
+    id: 5,
     nome: "Pedra, Papel & Tesoura",
     descricao:
       "Jogo clássico onde você compete contra o computador. Implementa lógica de pontuação, sistema de rodadas e declara o vencedor após cinco partidas.",
@@ -46,7 +56,7 @@ const projetos = [
       "https://raw.githubusercontent.com/igcarvalhaes/rock-paper-scissors/refs/heads/main/rockpaperscissors.png",
   },
   {
-    id: 5,
+    id: 6,
     nome: "Calculadora",
     descricao:
       "Calculadora funcional para operações matemáticas básicas. Projeto focado em manipulação do DOM e lógica de cálculo com JavaScript.",

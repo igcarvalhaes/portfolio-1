@@ -9,48 +9,71 @@ const projetos = [
     id: 1,
     nome: "Ignite Feed",
     descricao:
-      "Uma aplicação de feed desenvolvida durante o módulo de Fundamentos do Ignite ReactJS da Rocketseat. Neste projeto, eu aprendi e apliquei conceitos essenciais do React, como componentização, props, gerenciamento de estado, imutabilidade e hooks",
+      "Feed social desenvolvido com React, aplicando componentização, props, estados e hooks. Projeto do módulo Fundamentos do Ignite ReactJS da Rocketseat.",
     linkProjetoLive: "https://ignite-feed-ebon-seven.vercel.app/",
     linkRepo: "https://github.com/igcarvalhaes/ignite-feed",
+    projectImg:
+      "https://raw.githubusercontent.com/igcarvalhaes/ignite-feed/refs/heads/main/public/preview.png",
   },
   {
     id: 2,
-    nome: "Biblioteca",
+    nome: "Weather App",
     descricao:
-      "Uma aplicação de biblioteca criada como parte do curso The Odin Project. Este projeto foi desenvolvido para gerenciar livros, permitindo adicionar, editar e excluir itens. Aprendi conceitos fundamentais de DOM manipulation e lógica de programação com JavaScript.",
-    linkProjetoLive: "https://igcarvalhaes.github.io/library/",
-    linkRepo: "https://github.com/igcarvalhaes/library",
+      "Site de previsão do tempo com busca por cidade, consumindo API da OpenWeatherMap. Desenvolvido com JavaScript puro e estilizado com Tailwind CSS.",
+    linkProjetoLive: "https://igcarvalhaes.github.io/weatherwebsite/",
+    linkRepo: "https://github.com/igcarvalhaes/weatherwebsite",
+    projectImg:
+      "https://raw.githubusercontent.com/igcarvalhaes/weatherwebsite/refs/heads/main/img/01.png",
   },
   {
     id: 3,
-    nome: "Weather App",
+    nome: "Biblioteca",
     descricao:
-      "Um site para consulta de previsão do tempo, onde o usuário pode buscar informações meteorológicas de qualquer cidade. Desenvolvido com JavaScript puro, consumindo dados de uma API gratuita da OpenWeatherMap e utilizando Tailwind CSS para o design responsivo.",
-    linkProjetoLive: "https://igcarvalhaes.github.io/weatherwebsite/",
-    linkRepo: "https://github.com/igcarvalhaes/weatherwebsite",
+      "Aplicação para gerenciamento de livros com funcionalidades para adicionar, editar e excluir itens. Desenvolvido com JavaScript e manipulação de DOM.",
+    linkProjetoLive: "https://igcarvalhaes.github.io/library/",
+    linkRepo: "https://github.com/igcarvalhaes/library",
+    projectImg:
+      "https://raw.githubusercontent.com/igcarvalhaes/library/refs/heads/main/images/library02.png",
   },
   {
     id: 4,
-    nome: "Pedra, Papel & Tesoura",
+    nome: "Etch-a-Sketch",
     descricao:
-      "Você e o computador participarão de uma série de rodadas, cada uma escolhendo uma das três opções: Pedra, Papel ou Tesoura. O jogo acompanha a pontuação e declara o vencedor após cinco rodadas.",
-    linkProjetoLive: "https://igcarvalhaes.github.io/rock-paper-scissors/",
-    linkRepo: "https://github.com/igcarvalhaes/rock-paper-scissors",
+      "Desenhe livremente em uma grade de pixels, com funcionalidades para limpar a tela e alterar a cor do traço. Desenvolvido com JavaScript puro.",
+    linkProjetoLive: "https://igcarvalhaes.github.io/etch-a-sketch/",
+    linkRepo: "https://github.com/igcarvalhaes/etch-a-sketch",
+    projectImg:
+      "https://raw.githubusercontent.com/igcarvalhaes/etch-a-sketch/refs/heads/main/images/etch-a-sketch.png",
   },
   {
     id: 5,
+    nome: "Pedra, Papel & Tesoura",
+    descricao:
+      "Jogo clássico onde você compete contra o computador. Implementa lógica de pontuação, sistema de rodadas e declara o vencedor após cinco partidas.",
+    linkProjetoLive: "https://igcarvalhaes.github.io/rock-paper-scissors/",
+    linkRepo: "https://github.com/igcarvalhaes/rock-paper-scissors",
+    projectImg:
+      "https://raw.githubusercontent.com/igcarvalhaes/rock-paper-scissors/refs/heads/main/rockpaperscissors.png",
+  },
+  {
+    id: 6,
     nome: "Calculadora",
     descricao:
-      "Uma calculadora funcional que permite realizar operações matemáticas básicas, como adição, subtração, multiplicação e divisão. Desenvolvida como parte do curso The Odin Project, esse projeto foca no uso de JavaScript para manipulação do DOM e lógica de cálculo.",
+      "Calculadora funcional para operações matemáticas básicas. Projeto focado em manipulação do DOM e lógica de cálculo com JavaScript.",
     linkProjetoLive: "https://igcarvalhaes.github.io/calculator/",
     linkRepo: "https://github.com/igcarvalhaes/calculator",
+    projectImg:
+      "https://raw.githubusercontent.com/igcarvalhaes/calculator/refs/heads/main/images/calculator.png",
   },
 ];
 
 function App() {
   return (
     <>
-      <div id="início" className="min-h-screen bg-neutral-900 text-neutral-300">
+      <div
+        id="início"
+        className="min-h-screen bg-neutral-900 text-neutral-300 font-display"
+      >
         <Navbar />
         <main>
           <section
@@ -70,7 +93,7 @@ function App() {
               </div>
 
               {/* Texto */}
-              <div className="order-2 gap-5 md:gap-8 md:order-1 w-full flex flex-col items-center md:items-start justify-center text-center md:text-left px-4">
+              <div className="order-2 gap-5 md:gap-5 md:order-1 w-full flex flex-col items-center md:items-start justify-center text-center md:text-left px-4">
                 <h2 className="text-white text-3xl font-bold md:text-4xl md:text-left">
                   Igor Carvalhaes
                 </h2>
@@ -81,7 +104,7 @@ function App() {
                   acessibilidade, utilizando boas práticas de código limpo.
                 </p>
                 <nav
-                  className="flex w-full justify-center gap-10 md:justify-start"
+                  className="flex w-full justify-center gap-10 md:justify-start md:gap-6"
                   aria-label="links para redes sociais"
                 >
                   <a
@@ -117,12 +140,11 @@ function App() {
               </div>
             </div>
           </section>
-
+          <h1 className="text-4xl w-full text-center font-bold  md:text-5xl">
+            Projetos
+          </h1>
           <section id="projetos" className="flex justify-center py-16">
-            <div className="grid gap-6 md:mx-8 mx-4 md:max-w-7xl w-full place-items-center">
-              <h1 className="text-5xl font-bold text-center mb-5 md:text-4xl">
-                Projetos
-              </h1>
+            <div className="grid gap-6 md:mx-8 mx-4 md:grid-cols-3 md:max-w-7xl w-full auto-rows-fr">
               {projetos.map((projeto) => (
                 <ProjetosCard
                   key={projeto.id}
@@ -130,6 +152,7 @@ function App() {
                   descricao={projeto.descricao}
                   linkProjetoLive={projeto.linkProjetoLive}
                   linkRepo={projeto.linkRepo}
+                  projectImg={projeto.projectImg}
                 />
               ))}
             </div>

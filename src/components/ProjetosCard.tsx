@@ -16,12 +16,12 @@ export function ProjetosCard({
   projectImg,
 }: ProjetosCardProps) {
   return (
-    <article className="p-6 rounded-lg border-1 border-neutral-700 bg-neutral-800 max-w-2xl md:max-w-4xl">
-      <div className="flex flex-col md:p-8">
+    <article className="p-6 rounded-lg border-1 border-neutral-700 bg-neutral-800 w-full h-full flex flex-col">
+      <div className="flex flex-col flex-grow md:p-8 h-full">
         <a href={linkProjetoLive}>
-          <div className="overflow-hidden rounded-sm">
+          <div className="overflow-hidden rounded-sm w-full h-[200px]">
             <img
-              className="w-full max-w-[358px] object-cover h-50 rounded-sm transition-transform duration-500 hover:scale-110"
+              className="w-full h-full object-cover rounded-sm transition-transform duration-500 hover:scale-110"
               src={projectImg}
               alt=""
             />
@@ -38,7 +38,7 @@ export function ProjetosCard({
             </a>
           </span>
         </div>
-        <div className=" md:pt-2 md:mb-2">
+        <div className="md:pt-2 md:mb-2 flex-grow">
           <p className="text-sm md:text-xl text-left md:leading-tight">
             {descricao}
           </p>

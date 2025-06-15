@@ -9,7 +9,7 @@ const projetos = [
     id: 1,
     nome: "Ignite Feed",
     descricao:
-      "Uma aplicação de feed desenvolvida durante o módulo de Fundamentos do Ignite ReactJS da Rocketseat. Neste projeto, eu aprendi e apliquei conceitos essenciais do React, como componentização, props, gerenciamento de estado, imutabilidade e hooks",
+      "Feed social desenvolvido com React, aplicando componentização, props, estados e hooks. Projeto do módulo Fundamentos do Ignite ReactJS da Rocketseat.",
     linkProjetoLive: "https://ignite-feed-ebon-seven.vercel.app/",
     linkRepo: "https://github.com/igcarvalhaes/ignite-feed",
     projectImg:
@@ -19,7 +19,7 @@ const projetos = [
     id: 2,
     nome: "Biblioteca",
     descricao:
-      "Uma aplicação de biblioteca criada como parte do curso The Odin Project. Este projeto foi desenvolvido para gerenciar livros, permitindo adicionar, editar e excluir itens. Aprendi conceitos fundamentais de DOM manipulation e lógica de programação com JavaScript.",
+      "Aplicação para gerenciamento de livros com funcionalidades para adicionar, editar e excluir itens. Desenvolvido com JavaScript e manipulação de DOM.",
     linkProjetoLive: "https://igcarvalhaes.github.io/library/",
     linkRepo: "https://github.com/igcarvalhaes/library",
     projectImg:
@@ -29,7 +29,7 @@ const projetos = [
     id: 3,
     nome: "Weather App",
     descricao:
-      "Um site para consulta de previsão do tempo, onde o usuário pode buscar informações meteorológicas de qualquer cidade. Desenvolvido com JavaScript puro, consumindo dados de uma API gratuita da OpenWeatherMap e utilizando Tailwind CSS para o design responsivo.",
+      "Site de previsão do tempo com busca por cidade, consumindo API da OpenWeatherMap. Desenvolvido com JavaScript puro e estilizado com Tailwind CSS.",
     linkProjetoLive: "https://igcarvalhaes.github.io/weatherwebsite/",
     linkRepo: "https://github.com/igcarvalhaes/weatherwebsite",
     projectImg:
@@ -39,7 +39,7 @@ const projetos = [
     id: 4,
     nome: "Pedra, Papel & Tesoura",
     descricao:
-      "Você e o computador participarão de uma série de rodadas, cada uma escolhendo uma das três opções: Pedra, Papel ou Tesoura. O jogo acompanha a pontuação e declara o vencedor após cinco rodadas.",
+      "Jogo clássico onde você compete contra o computador. Implementa lógica de pontuação, sistema de rodadas e declara o vencedor após cinco partidas.",
     linkProjetoLive: "https://igcarvalhaes.github.io/rock-paper-scissors/",
     linkRepo: "https://github.com/igcarvalhaes/rock-paper-scissors",
     projectImg:
@@ -49,7 +49,7 @@ const projetos = [
     id: 5,
     nome: "Calculadora",
     descricao:
-      "Uma calculadora funcional que permite realizar operações matemáticas básicas, como adição, subtração, multiplicação e divisão. Desenvolvida como parte do curso The Odin Project, esse projeto foca no uso de JavaScript para manipulação do DOM e lógica de cálculo.",
+      "Calculadora funcional para operações matemáticas básicas. Projeto focado em manipulação do DOM e lógica de cálculo com JavaScript.",
     linkProjetoLive: "https://igcarvalhaes.github.io/calculator/",
     linkRepo: "https://github.com/igcarvalhaes/calculator",
     projectImg:
@@ -130,10 +130,11 @@ function App() {
               </div>
             </div>
           </section>
-
+          <h1 className="text-4xl w-full text-center font-bold  md:text-5xl">
+            Projetos
+          </h1>
           <section id="projetos" className="flex justify-center py-16">
-            <div className="grid gap-6 md:mx-8 mx-4 md:max-w-7xl w-full place-items-center">
-              <h1 className="text-5xl font-bold mb-5 md:text-4xl">Projetos</h1>
+            <div className="grid gap-6 md:mx-8 mx-4 md:grid-cols-3 md:max-w-7xl w-full auto-rows-fr">
               {projetos.map((projeto) => (
                 <ProjetosCard
                   key={projeto.id}

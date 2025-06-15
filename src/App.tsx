@@ -141,6 +141,7 @@ function App() {
                   descricao={projeto.descricao}
                   linkProjetoLive={projeto.linkProjetoLive}
                   linkRepo={projeto.linkRepo}
+                  projectImg={projeto.projectImg}
                 />
               ))}
             </div>

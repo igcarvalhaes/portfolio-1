@@ -1,133 +1,54 @@
-# Portfolio - Igor Carvalhaes
+# React + TypeScript + Vite
 
-## Overview
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-This is a personal portfolio website for Igor Carvalhaes, a front-end developer and Computer Engineering student. The site showcases his skills, projects, and provides contact information through a clean, responsive interface with a modern dark theme.
+Currently, two official plugins are available:
 
-## Live Demo
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-[Portfolio Website](www.igorcarvalhaes.com)
+## Expanding the ESLint configuration
 
-## Features
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-- **Responsive Design**: Fully responsive layout that works on mobile and desktop
-- **Dark Theme**: Modern dark color scheme with subtle hover effects
-- **Project Showcase**: Dynamic project cards displaying personal work with descriptions
-- **Social Media Links**: Direct links to GitHub, LinkedIn, Twitter and email
-- **Smooth Navigation**: Anchor links for single-page navigation
-- **Mobile Menu**: Collapsible hamburger menu for mobile devices
-
-## Technologies Used
-
-- **React 19**: UI component library
-- **TypeScript**: Type-safe JavaScript
-- **Vite**: Fast build tool and development server
-- **TailwindCSS 4**: Utility-first CSS framework
-- **Lucide React**: Lightweight icon library
-
-## Project Structure
-
-```
-portfolio/
-├── public/            # Static assets
-├── src/
-│   ├── components/    # Reusable UI components
-│   │   ├── Footer.tsx
-│   │   ├── Navbar.tsx
-│   │   └── ProjetosCard.tsx
-│   ├── App.tsx        # Main application component
-│   ├── App.css        # App-specific styles
-│   ├── main.tsx       # Entry point
-│   └── index.css      # Global styles
-├── index.html         # HTML template
-├── vite.config.ts     # Vite configuration
-├── tsconfig.json      # TypeScript configuration
-└── package.json       # Dependencies and scripts
+```js
+export default tseslint.config({
+  extends: [
+    // Remove ...tseslint.configs.recommended and replace with this
+    ...tseslint.configs.recommendedTypeChecked,
+    // Alternatively, use this for stricter rules
+    ...tseslint.configs.strictTypeChecked,
+    // Optionally, add this for stylistic rules
+    ...tseslint.configs.stylisticTypeChecked,
+  ],
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
 ```
 
-## Components
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-### Navbar
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-Navigation component with:
-
-- Desktop horizontal menu
-- Mobile hamburger menu that opens a drawer-style navigation
-- Smooth scrolling anchor links
-
-### ProjetosCard
-
-Project display card with:
-
-- Project title
-- Project description
-- Links to live demo and GitHub repository
-- Hover effects for interactive elements
-
-### Footer
-
-Simple footer with copyright information.
-
-## Main Application
-
-The App component contains:
-
-- Profile section with photo and introduction
-- Social links section with icon buttons
-- Projects section displaying work in card format
-
-## Setup and Installation
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/igcarvalhaes/portifolio.git
-cd portifolio
+export default tseslint.config({
+  plugins: {
+    // Add the react-x and react-dom plugins
+    'react-x': reactX,
+    'react-dom': reactDom,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended typescript rules
+    ...reactX.configs['recommended-typescript'].rules,
+    ...reactDom.configs.recommended.rules,
+  },
+})
 ```
-
-2. Install dependencies
-
-```bash
-npm install
-```
-
-3. Start development server
-
-```bash
-npm run dev
-```
-
-4. Build for production
-
-```bash
-npm run build
-```
-
-## Design Decisions
-
-- **Dark Theme**: Professional modern look with dark background and light text
-- **Minimalist Aesthetic**: Clean interface without unnecessary elements
-- **Responsive Design**: Mobile-first approach with tailored layouts for different screen sizes
-- **Accessibility**: Proper semantic elements and aria attributes for screen readers
-- **Performance**: Optimized component rendering and efficient Tailwind utility usage
-
-## Future Enhancements
-
-- Add blog section to showcase writing
-- Implement dark/light theme toggle
-- Add animations for smoother transitions
-- Include filters for project categories
-- Add language selection for internationalization
-- Implement contact form
-
-## Contributing
-
-This is a personal portfolio project, but suggestions and feedback are welcome. Please open an issue to discuss potential changes.
-
-## License
-
-[MIT](#) - Add your preferred license
-
----
-
-Created by Igor Carvalhaes | [GitHub](https://github.com/igcarvalhaes) | [LinkedIn](https://www.linkedin.com/in/igor-carvalhaes/)

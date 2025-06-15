@@ -50,7 +50,10 @@ const projetos = [
 function App() {
   return (
     <>
-      <div id="início" className="min-h-screen bg-neutral-900 text-neutral-300">
+      <div
+        id="início"
+        className="min-h-screen bg-neutral-900 text-neutral-300 font-display"
+      >
         <Navbar />
         <main>
           <section
@@ -70,7 +73,7 @@ function App() {
               </div>
 
               {/* Texto */}
-              <div className="order-2 gap-5 md:gap-8 md:order-1 w-full flex flex-col items-center md:items-start justify-center text-center md:text-left px-4">
+              <div className="order-2 gap-5 md:gap-5 md:order-1 w-full flex flex-col items-center md:items-start justify-center text-center md:text-left px-4">
                 <h2 className="text-white text-3xl font-bold md:text-4xl md:text-left">
                   Igor Carvalhaes
                 </h2>
@@ -81,7 +84,7 @@ function App() {
                   acessibilidade, utilizando boas práticas de código limpo.
                 </p>
                 <nav
-                  className="flex w-full justify-center gap-10 md:justify-start"
+                  className="flex w-full justify-center gap-10 md:justify-start md:gap-6"
                   aria-label="links para redes sociais"
                 >
                   <a
@@ -120,9 +123,7 @@ function App() {
 
           <section id="projetos" className="flex justify-center py-16">
             <div className="grid gap-6 md:mx-8 mx-4 md:max-w-7xl w-full place-items-center">
-              <h1 className="text-5xl font-bold text-center mb-5 md:text-4xl">
-                Projetos
-              </h1>
+              <h1 className="text-5xl font-bold mb-5 md:text-4xl">Projetos</h1>
               {projetos.map((projeto) => (
                 <ProjetosCard
                   key={projeto.id}

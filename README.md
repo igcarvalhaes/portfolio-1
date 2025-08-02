@@ -1,133 +1,208 @@
-# Portfolio - Igor Carvalhaes
+# 🚀 Igor Carvalhaes - Portfólio Frontend
 
-## Overview
+> Portfólio pessoal desenvolvido com React, TypeScript e Tailwind CSS, apresentando projetos e habilidades em desenvolvimento frontend.
 
-This is a personal portfolio website for Igor Carvalhaes, a front-end developer and Computer Engineering student. The site showcases his skills, projects, and provides contact information through a clean, responsive interface with a modern dark theme.
+## 📋 Sobre o Projeto
 
-## Live Demo
+Este é o portfólio pessoal de Igor Carvalhaes, estudante de Engenharia de Computação na UERJ, focado em desenvolvimento frontend. O projeto foi construído com tecnologias modernas e design responsivo, seguindo as melhores práticas de desenvolvimento.
 
-[Portfolio Website](www.igorcarvalhaes.com)
+## ✨ Funcionalidades
 
-## Features
+- 🎨 **Design Moderno**: Interface limpa com gradientes e animações suaves
+- 📱 **Totalmente Responsivo**: Adaptado para todos os dispositivos
+- 🌟 **Animações Interativas**: Efeitos hover e transições fluidas
+- 🎯 **Seções Organizadas**: Hero, Sobre, Habilidades, Projetos e Footer
+- 🌈 **Efeito Rainbow**: Animação especial no nome do footer
+- ⚡ **Performance Otimizada**: Build otimizado com Vite
 
-- **Responsive Design**: Fully responsive layout that works on mobile and desktop
-- **Dark Theme**: Modern dark color scheme with subtle hover effects
-- **Project Showcase**: Dynamic project cards displaying personal work with descriptions
-- **Social Media Links**: Direct links to GitHub, LinkedIn, Twitter and email
-- **Smooth Navigation**: Anchor links for single-page navigation
-- **Mobile Menu**: Collapsible hamburger menu for mobile devices
+## 🛠️ Tecnologias Utilizadas
 
-## Technologies Used
+### Frontend
 
-- **React 19**: UI component library
-- **TypeScript**: Type-safe JavaScript
-- **Vite**: Fast build tool and development server
-- **TailwindCSS 4**: Utility-first CSS framework
-- **Lucide React**: Lightweight icon library
+- **React 18.3.1** - Biblioteca para interfaces
+- **TypeScript 5.5.3** - Tipagem estática
+- **Vite 5.4.1** - Build tool moderna
+- **Tailwind CSS 3.4.11** - Framework CSS utilitário
 
-## Project Structure
+### UI/UX
+
+- **shadcn/ui** - Componentes reutilizáveis
+- **Radix UI** - Primitivos acessíveis
+- **Lucide React** - Ícones modernos
+- **CSS Grid** - Layout Bento Grid responsivo
+
+### Ferramentas de Desenvolvimento
+
+- **ESLint** - Linting de código
+- **PostCSS** - Processamento CSS
+- **Autoprefixer** - Compatibilidade CSS
+
+## 📁 Estrutura do Projeto
 
 ```
-portfolio/
-├── public/            # Static assets
+portifolio/
+├── public/
+│   ├── favicon.ico
+│   ├── placeholder.svg
+│   └── robots.txt
 ├── src/
-│   ├── components/    # Reusable UI components
-│   │   ├── Footer.tsx
-│   │   ├── Navbar.tsx
-│   │   └── ProjetosCard.tsx
-│   ├── App.tsx        # Main application component
-│   ├── App.css        # App-specific styles
-│   ├── main.tsx       # Entry point
-│   └── index.css      # Global styles
-├── index.html         # HTML template
-├── vite.config.ts     # Vite configuration
-├── tsconfig.json      # TypeScript configuration
-└── package.json       # Dependencies and scripts
+│   ├── components/
+│   │   ├── ui/                    # Componentes base do shadcn/ui
+│   │   │   ├── badge.tsx
+│   │   │   ├── button.tsx
+│   │   │   ├── toast.tsx
+│   │   │   └── ...
+│   │   ├── AboutSection.tsx       # Seção sobre o desenvolvedor
+│   │   ├── Footer.tsx             # Footer com efeito rainbow
+│   │   ├── HeroSection.tsx        # Seção principal/apresentação
+│   │   ├── ProjectCard.tsx        # Card individual de projeto
+│   │   ├── ProjectsSection.tsx    # Galeria de projetos
+│   │   └── SkillsSection.tsx      # Habilidades e tecnologias
+│   ├── hooks/
+│   │   └── use-toast.ts           # Hook para notificações
+│   ├── lib/
+│   │   └── utils.ts               # Funções utilitárias
+│   ├── pages/
+│   │   ├── Index.tsx              # Página principal
+│   │   └── NotFound.tsx           # Página 404
+│   ├── App.tsx                    # Componente raiz
+│   ├── index.css                  # Estilos globais + animações
+│   └── main.tsx                   # Ponto de entrada
+├── package.json
+├── tailwind.config.ts
+├── tsconfig.json
+└── vite.config.ts
 ```
 
-## Components
+## 🎯 Seções do Portfólio
 
-### Navbar
+### 🏠 Hero Section
 
-Navigation component with:
+- Foto de perfil com animação
+- Nome com gradiente colorido
+- Links para redes sociais (GitHub, LinkedIn, Twitter, Email)
+- Botão para navegação aos projetos
 
-- Desktop horizontal menu
-- Mobile hamburger menu that opens a drawer-style navigation
-- Smooth scrolling anchor links
+### 👨‍💻 About Section
 
-### ProjetosCard
+- Biografia pessoal
+- Localização (Rio de Janeiro, RJ)
+- Status de disponibilidade para oportunidades
+- Informações sobre motivação e objetivos
 
-Project display card with:
+### ⚡ Skills Section
 
-- Project title
-- Project description
-- Links to live demo and GitHub repository
-- Hover effects for interactive elements
+- **Frontend**: React, JavaScript, TypeScript, HTML, CSS, Tailwind CSS
+- **Ferramentas**: Git, Vite, VS Code, GitHub, API Integration
+- **Conceitos**: DOM Manipulation, Componentização, Hooks, Responsive Design
 
-### Footer
+### 💼 Projects Section
 
-Simple footer with copyright information.
+Showcases de 6 projetos principais:
 
-## Main Application
+1. **Ignite Feed** - Feed social com React
+2. **Weather App** - Aplicativo de clima com API
+3. **Biblioteca** - Sistema de gerenciamento de livros
+4. **Etch-a-Sketch** - Aplicativo de desenho interativo
+5. **Pedra, Papel & Tesoura** - Jogo clássico
+6. **Calculadora** - Calculadora funcional
 
-The App component contains:
+### 🌈 Footer
 
-- Profile section with photo and introduction
-- Social links section with icon buttons
-- Projects section displaying work in card format
+- Copyright com efeito rainbow animado
+- Interação especial no hover do nome
 
-## Setup and Installation
+## 🚀 Como Executar
 
-1. Clone the repository
+### Pré-requisitos
+
+- Node.js (v22.14.0 ou superior)
+- npm (v11.2.0 ou superior)
+
+### Instalação
 
 ```bash
+# Clone o repositório
 git clone https://github.com/igcarvalhaes/portifolio.git
+
+# Entre no diretório
 cd portifolio
-```
 
-2. Install dependencies
-
-```bash
+# Instale as dependências
 npm install
-```
 
-3. Start development server
-
-```bash
+# Execute o projeto em modo desenvolvimento
 npm run dev
+
+# Acesse no navegador
+http://localhost:5173
 ```
 
-4. Build for production
+### Scripts Disponíveis
 
 ```bash
-npm run build
+npm run dev        # Servidor de desenvolvimento
+npm run build      # Build de produção
+npm run preview    # Preview do build
+npm run lint       # Verificação de código
 ```
 
-## Design Decisions
+## 📱 Layout Responsivo
 
-- **Dark Theme**: Professional modern look with dark background and light text
-- **Minimalist Aesthetic**: Clean interface without unnecessary elements
-- **Responsive Design**: Mobile-first approach with tailored layouts for different screen sizes
-- **Accessibility**: Proper semantic elements and aria attributes for screen readers
-- **Performance**: Optimized component rendering and efficient Tailwind utility usage
+O projeto utiliza um sistema de grid responsivo (Bento Grid) que se adapta a diferentes tamanhos de tela:
 
-## Future Enhancements
+- **Mobile** (< 768px): Layout de coluna única
+- **Tablet** (768px - 1024px): Layout de 2 colunas
+- **Desktop** (> 1024px): Layout de 12 colunas com posicionamento específico
 
-- Add blog section to showcase writing
-- Implement dark/light theme toggle
-- Add animations for smoother transitions
-- Include filters for project categories
-- Add language selection for internationalization
-- Implement contact form
+## 🎨 Design System
 
-## Contributing
+### Cores
 
-This is a personal portfolio project, but suggestions and feedback are welcome. Please open an issue to discuss potential changes.
+- **Primary**: Azul ciano (#00A6D6)
+- **Secondary**: Roxo vibrante (#B366F2)
+- **Accent**: Verde esmeralda (#22C55E)
 
-## License
+### Animações
 
-[MIT](#) - Add your preferred license
+- Efeito float nos elementos
+- Transições suaves (300ms)
+- Hover effects interativos
+- Rainbow animation no footer
+
+## 📈 Performance
+
+- ⚡ Build otimizado com Vite
+- 🖼️ Imagens otimizadas
+- 📦 Code splitting automático
+- 🎯 Lazy loading implementado
+
+## 🔮 Próximas Implementações
+
+- [ ] Modo escuro/claro
+- [ ] Formulário de contato funcional
+- [ ] Blog pessoal
+- [ ] Mais projetos showcases
+- [ ] Testes automatizados
+- [ ] PWA (Progressive Web App)
+
+## 👨‍💻 Desenvolvedor
+
+**Igor Carvalhaes**
+
+- 🎓 Estudante de Engenharia de Computação - UERJ
+- 💼 Desenvolvedor Frontend
+- 📍 Rio de Janeiro, RJ
+- 🔗 [GitHub](https://github.com/igcarvalhaes)
+- 💼 [LinkedIn](https://linkedin.com/in/igorcarvalhaes)
+- 📧 contatoigorcarvalhaes@gmail.com
+
+## 📄 Licença
+
+Este projeto é pessoal e está disponível sob a licença MIT. Sinta-se livre para se inspirar, mas por favor, não copie diretamente.
 
 ---
 
-Created by Igor Carvalhaes | [GitHub](https://github.com/igcarvalhaes) | [LinkedIn](https://www.linkedin.com/in/igor-carvalhaes/)
+<div align="center">
+  <p>Feito com ❤️ e muito ☕ por Igor Carvalhaes</p>
+</div>

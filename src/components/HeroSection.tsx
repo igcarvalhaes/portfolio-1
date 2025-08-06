@@ -1,4 +1,11 @@
-import { Github, Linkedin, Mail, ArrowDown, Twitter } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  ArrowDown,
+  Twitter,
+  Download,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -86,6 +93,20 @@ const HeroSection = () => {
           >
             <a href="mailto:contatoigorcarvalhaes@gmail.com">
               <Mail className="w-5 h-5" />
+            </a>
+          </Button>
+          <Button
+            variant="outline"
+            size="icon"
+            className="rounded-full border-primary/30 hover:border-primary hover:bg-primary/10 transition-all duration-300"
+            asChild
+          >
+            <a
+              href="/Curriculum_Igor_Carvalhaes.pdf"
+              download="Curriculum_Igor_Carvalhaes.pdf"
+              title="Baixar Currículo"
+            >
+              <Download className="w-5 h-5" />
             </a>
           </Button>
         </div>

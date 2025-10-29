@@ -23,7 +23,13 @@ const AboutSection = () => {
           <div className="flex items-center gap-3 text-sm">
             <Calendar className="w-4 h-4 text-secondary" />
             <span className="text-muted-foreground">
-              Aberto para oportunidades de emprego
+              Estagiário na{" "}
+              <a
+                href="https://www.linkedin.com/company/serrajreng/posts/?feedView=all"
+                className="rainbow-text transition-all duration-300 inline-block font-semibold"
+              >
+                Serra Jr. Engenharia
+              </a>
             </span>
           </div>
           <div className="flex items-center gap-3 text-sm">

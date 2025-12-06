@@ -11,7 +11,8 @@ export const DATA = {
     "Desenvolvedor Front-End. Estudante de Engenharia de Computação na UERJ, apaixonado por criar interfaces bonitas e interativas.",
   summary:
     "Sou um desenvolvedor front-end, estudante de Engenharia de Computação na UERJ, apaixonado por criar interfaces bonitas e interativas, focadas em usabilidades, desempenho e acessibilidade, utilizando boas práticas de código limpo. Quando não estou programando, você me encontrará explorando novas tecnologias, aprimorando minhas habilidades através de projetos pessoais, ou estudando para me tornar um engenheiro completo.",
-  avatarUrl: "/me.png",
+  avatarUrl:
+    "https://media.licdn.com/dms/image/v2/D4D03AQHBCdXBwsxgdQ/profile-displayphoto-scale_400_400/B4DZmbqS_vJEAk-/0/1759253181068?e=1766620800&v=beta&t=I1tmwt7m1QFWVybhjyo2bCgp1alaZZLYp1Vp97PUTyU",
   skills: [
     "React",
     "Next.js",
@@ -92,7 +93,7 @@ export const DATA = {
       href: "https://www.uerj.br",
       degree: "Bacharelado em Engenharia de Computação",
       logoUrl: "/uerj.png",
-      start: "2022",
+      start: "",
       end: "Presente",
     },
   ],

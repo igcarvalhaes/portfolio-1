@@ -15,17 +15,45 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
-    default: DATA.name,
-    template: `%s | ${DATA.name}`,
+    default: "Igor Carvalhaes - Desenvolvedor",
+    template: `%s | Igor Carvalhaes - Desenvolvedor`,
   },
   description: DATA.description,
+  keywords: [
+    "Igor Carvalhaes",
+    "Desenvolvedor Front-End",
+    "React",
+    "Next.js",
+    "JavaScript",
+    "TypeScript",
+    "Engenharia de Computação",
+    "UERJ",
+    "Portfolio",
+    "Web Developer",
+    "Rio de Janeiro",
+  ],
+  authors: [
+    {
+      name: DATA.name,
+      url: DATA.url,
+    },
+  ],
+  creator: DATA.name,
   openGraph: {
-    title: `${DATA.name}`,
+    title: DATA.name,
     description: DATA.description,
     url: DATA.url,
-    siteName: `${DATA.name}`,
+    siteName: DATA.name,
     locale: "pt_BR",
     type: "website",
+    images: [
+      {
+        url: DATA.avatarUrl,
+        width: 400,
+        height: 400,
+        alt: DATA.name,
+      },
+    ],
   },
   robots: {
     index: true,
@@ -39,12 +67,18 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: `${DATA.name}`,
+    title: DATA.name,
+    description: DATA.description,
     card: "summary_large_image",
+    creator: "@igcarvalhaes",
+    images: [DATA.avatarUrl],
   },
   verification: {
     google: "",
     yandex: "",
+  },
+  alternates: {
+    canonical: DATA.url,
   },
 };
 

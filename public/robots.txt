@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.igorcarvalhaes.com
+
+# Sitemaps
+Sitemap: https://www.igorcarvalhaes.com/sitemap.xml

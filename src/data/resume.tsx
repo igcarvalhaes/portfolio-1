@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon, NotebookIcon, FileTextIcon } from "lucide-react";
 
 export const DATA = {
   name: "Igor Carvalhaes",
@@ -14,6 +14,7 @@ export const DATA = {
   avatarUrl: "/me.png",
   skills: [
     "React",
+    "Next.js",
     "JavaScript",
     "TypeScript",
     "HTML",
@@ -29,6 +30,12 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    {
+      href: "/Curriculum_Igor_Carvalhaes.pdf",
+      icon: FileTextIcon,
+      label: "Currículo",
+      target: "_blank",
+    },
   ],
   contact: {
     email: "contatoigorcarvalhaes@gmail.com",
@@ -73,7 +80,7 @@ export const DATA = {
       location: "Rio de Janeiro, RJ",
       title: "Estagiário",
       logoUrl: "/serrajr.png",
-      start: "2024",
+      start: "Setembro 2025",
       end: "Presente",
       description:
         "Desenvolvimento e manutenção de aplicações web utilizando React e JavaScript. Foco em criar interfaces responsivas e acessíveis, aplicando boas práticas de desenvolvimento.",

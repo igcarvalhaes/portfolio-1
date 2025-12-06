@@ -24,9 +24,6 @@ export const DATA = {
     "VS Code",
     "GitHub",
     "API Integration",
-    "DOM Manipulation",
-    "Componentização",
-    "Hooks",
     "Responsive Design",
   ],
   navbar: [
@@ -71,7 +68,7 @@ export const DATA = {
   work: [
     {
       company: "Serra Jr. Engenharia",
-      href: "https://www.linkedin.com/company/serrajreng/posts/?feedView=all",
+      href: "https://www.linkedin.com/company/serrajreng/",
       badges: [],
       location: "Rio de Janeiro, RJ",
       title: "Estagiário",
@@ -100,12 +97,7 @@ export const DATA = {
       active: true,
       description:
         "Feed social desenvolvido com React, aplicando componentização, props, estados e hooks. Projeto do módulo Fundamentos do Ignite ReactJS da Rocketseat.",
-      technologies: [
-        "React",
-        "CSS",
-        "Vite",
-        "JavaScript",
-      ],
+      technologies: ["React", "CSS", "Vite", "JavaScript"],
       links: [
         {
           type: "Website",
@@ -118,7 +110,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "https://raw.githubusercontent.com/igcarvalhaes/ignite-feed/refs/heads/main/public/preview.png",
+      image:
+        "https://raw.githubusercontent.com/igcarvalhaes/ignite-feed/refs/heads/main/public/preview.png",
       video: "",
     },
     {
@@ -128,12 +121,7 @@ export const DATA = {
       active: true,
       description:
         "Site de previsão do tempo com busca por cidade, consumindo API da OpenWeatherMap. Desenvolvido com JavaScript puro e estilizado com Tailwind CSS.",
-      technologies: [
-        "JavaScript",
-        "Tailwind CSS",
-        "API",
-        "HTML",
-      ],
+      technologies: ["JavaScript", "Tailwind CSS", "API", "HTML"],
       links: [
         {
           type: "Website",
@@ -146,7 +134,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "https://raw.githubusercontent.com/igcarvalhaes/weatherwebsite/refs/heads/main/img/01.png",
+      image:
+        "https://raw.githubusercontent.com/igcarvalhaes/weatherwebsite/refs/heads/main/img/01.png",
       video: "",
     },
     {
@@ -156,12 +145,7 @@ export const DATA = {
       active: true,
       description:
         "Aplicação para gerenciamento de livros com funcionalidades para adicionar, editar e excluir itens. Desenvolvido com JavaScript e manipulação de DOM.",
-      technologies: [
-        "JavaScript",
-        "DOM",
-        "CSS",
-        "HTML",
-      ],
+      technologies: ["JavaScript", "DOM", "CSS", "HTML"],
       links: [
         {
           type: "Website",
@@ -174,7 +158,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "https://raw.githubusercontent.com/igcarvalhaes/library/refs/heads/main/images/library02.png",
+      image:
+        "https://raw.githubusercontent.com/igcarvalhaes/library/refs/heads/main/images/library02.png",
       video: "",
     },
     {
@@ -184,12 +169,7 @@ export const DATA = {
       active: true,
       description:
         "Desenhe livremente em uma grade de pixels, com funcionalidades para limpar a tela e alterar a cor do traço. Desenvolvido com JavaScript puro.",
-      technologies: [
-        "JavaScript",
-        "CSS",
-        "DOM",
-        "Canvas",
-      ],
+      technologies: ["JavaScript", "CSS", "DOM", "Canvas"],
       links: [
         {
           type: "Website",
@@ -202,7 +182,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "https://raw.githubusercontent.com/igcarvalhaes/etch-a-sketch/refs/heads/main/images/etch-a-sketch.png",
+      image:
+        "https://raw.githubusercontent.com/igcarvalhaes/etch-a-sketch/refs/heads/main/images/etch-a-sketch.png",
       video: "",
     },
     {
@@ -212,12 +193,7 @@ export const DATA = {
       active: true,
       description:
         "Jogo clássico onde você compete contra o computador. Implementa lógica de pontuação, sistema de rodadas e declara o vencedor após cinco partidas.",
-      technologies: [
-        "JavaScript",
-        "Game Logic",
-        "CSS",
-        "HTML",
-      ],
+      technologies: ["JavaScript", "Game Logic", "CSS", "HTML"],
       links: [
         {
           type: "Website",
@@ -230,7 +206,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "https://raw.githubusercontent.com/igcarvalhaes/rock-paper-scissors/refs/heads/main/rockpaperscissors.png",
+      image:
+        "https://raw.githubusercontent.com/igcarvalhaes/rock-paper-scissors/refs/heads/main/rockpaperscissors.png",
       video: "",
     },
     {
@@ -240,12 +217,7 @@ export const DATA = {
       active: true,
       description:
         "Calculadora funcional para operações matemáticas básicas. Projeto focado em manipulação do DOM e lógica de cálculo com JavaScript.",
-      technologies: [
-        "JavaScript",
-        "Math Logic",
-        "CSS",
-        "DOM",
-      ],
+      technologies: ["JavaScript", "Math Logic", "CSS", "DOM"],
       links: [
         {
           type: "Website",
@@ -258,12 +230,10 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "https://raw.githubusercontent.com/igcarvalhaes/calculator/refs/heads/main/images/calculator.png",
+      image:
+        "https://raw.githubusercontent.com/igcarvalhaes/calculator/refs/heads/main/images/calculator.png",
       video: "",
     },
   ],
-  hackathons: [
-    // Adicione seus hackathons aqui se participou de algum
-    // Ou remova esta seção se preferir
-  ],
+  hackathons: [],
 } as const;
